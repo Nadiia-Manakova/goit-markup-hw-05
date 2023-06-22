@@ -522,6 +522,10 @@ button:hover,
 button:focus {
   background-color: var(--success);
 }
+
+.btn-icon {
+  fill: var(--white-background);
+}
 /* 
 ===========================
 portfolio 
@@ -645,7 +649,7 @@ form
   min-height: 584px;
   top: 55%;
   left: 50%;
-
+  padding: 24px;
   background-color: var(--modal-background);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
@@ -690,4 +694,25 @@ form
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.input-container {
+  display: block;
+  position: relative;
+  width: 360px;
+}
+
+.form-input {
+  width: 100%;
+  padding-left: 38px;
+}
+
+.form-icon {
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 1;
+  float: left;
+  margin-left: 16px;
 }
