@@ -56,6 +56,28 @@ ol {
   list-style-type: none;
 }
 
+input,
+textarea,
+button {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+input,
+textarea {
+  padding: 8px 16px;
+}
+
+button {
+  color: currentColor;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
 /* 
 ===========================
 base styles
@@ -430,12 +452,12 @@ footer
 }
 
 .white-text,
-.social-icons-text {
+.footer-semibold-text {
   color: var(--white-background);
   width: 264px;
 }
 
-.social-icons-text {
+.footer-semibold-text {
   font-weight: 500;
   margin-bottom: 16px;
 }
