@@ -502,7 +502,8 @@ footer
 }
 
 .subscribe-form-input:focus-within {
-  border: 1px solid var(--primary-brand);
+  border-color: var(--primary-brand);
+  outline: none;
 }
 
 .subscribe-btn {
@@ -705,6 +706,12 @@ form
 .form-input {
   width: 100%;
   padding-left: 38px;
+  border-radius: 4px;
+  border: 1px solid var(--subtle-text);
+}
+
+.text-input {
+  padding-left: 16px;
 }
 
 .form-icon {
@@ -714,5 +721,30 @@ form
   position: absolute;
   z-index: 1;
   float: left;
-  margin-left: 16px;
+  right: 90%;
+}
+
+.form-input:focus {
+  border-color: var(--primary-brand);
+  outline: none;
+}
+
+.form-input:focus + .form-icon {
+  stroke: none;
+  fill: var(--primary-brand);
+}
+
+.modal-submit-btn {
+  width: 169px;
+  padding: 16px 32px;
+  color: var(--white-background);
+  font-weight: 500;
+  background-color: var(--primary-brand);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.modal-submit-btn:focus,
+.modal-submit-btn:hover {
+  background-color: var(--pressed-state);
 }
