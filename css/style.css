@@ -512,9 +512,10 @@ footer
   align-items: center;
   justify-content: center;
   gap: 16px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
-
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   border-radius: 4px;
   background-color: var(--primary-brand);
   color: var(--white-background);
@@ -529,6 +530,7 @@ button:focus {
 
 .btn-icon {
   fill: var(--white-background);
+  margin-left: 16px;
 }
 /* 
 ===========================
