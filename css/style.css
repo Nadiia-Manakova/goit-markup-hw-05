@@ -766,7 +766,7 @@ form
   text-decoration: underline;
   color: var(--primary-brand);
 }
-.checkbox-wrap p,
+.checkbox-wrap span,
 .form-inputs-item label {
   color: var(--subtle-text);
   font-size: 12px;
