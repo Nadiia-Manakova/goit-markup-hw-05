@@ -485,7 +485,8 @@ footer
   background-color: var(--success);
 }
 
-.subscribe-form {
+.subscribe-form,
+.subscribe-form-label {
   gap: 24px;
 }
 
