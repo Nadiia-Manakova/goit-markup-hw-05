@@ -485,10 +485,14 @@ footer
   background-color: var(--success);
 }
 
+.subscribe-form {
+  gap: 24px;
+}
+
 .subscribe-form-input {
   align-items: center;
   justify-content: flex-start;
-  gap: 24px;
+
   width: 264px;
   height: 40px;
   font-size: 12px;
