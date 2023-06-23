@@ -488,6 +488,7 @@ footer
 .subscribe-form-input {
   align-items: center;
   justify-content: flex-start;
+  gap: 24px;
   width: 264px;
   height: 40px;
   color: var(--white-background);
