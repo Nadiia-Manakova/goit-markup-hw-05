@@ -790,9 +790,10 @@ form
 }
 .modal-submit-btn {
   display: block;
-  min-width: 169px
+  min-width: 169px;
   height: 56px;
   padding: 16px 32px;
+  margin: 0 auto;
   color: var(--white-background);
   font-weight: 500;
   line-height: 1.5;
@@ -840,7 +841,7 @@ form
 .checkbox-icon-box {
   display: inline-flex;
   position: relative;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   width: 16px;
   height: 16px;
@@ -870,7 +871,6 @@ form
 input:checked ~ .checkbox-icon-box .checkbox-icon {
   display: block;
   fill: var(--light);
-  
 }
 
 input:checked ~ .checkbox-icon-box {
