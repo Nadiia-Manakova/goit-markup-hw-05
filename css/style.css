@@ -809,11 +809,13 @@ form
   color: var(--primary-brand);
 }
 
-.checkbox-wrap span,
-.form-inputs-item label {
+.checkbox-label {
   color: var(--subtle-text);
   font-size: 12px;
   letter-spacing: 0.48px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--subtle-text);
 }
 
 .form-inputs-item {
@@ -834,10 +836,12 @@ form
   width: 16px;
   height: 16px;
   fill: transparent;
-  border: 1px solid var(--subtle-text);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   padding: 2px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-icon {
