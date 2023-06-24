@@ -769,7 +769,7 @@ form
   fill: var(--primary-brand);
 }
 
-.textarea {
+.form-inputs-item.textarea {
   margin-bottom: 16px;
 }
 
