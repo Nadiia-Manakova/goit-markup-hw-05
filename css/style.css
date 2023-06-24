@@ -733,7 +733,8 @@ form
   height: 40px;
   padding-left: 38px;
   border-radius: 4px;
-  border: 1px solid var(--subtle-text);
+  background-color: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -755,9 +756,9 @@ form
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus {
+.form-input:focus,
+.text-input:focus {
   border-color: var(--primary-brand);
-  outline: none;
 }
 
 .form-input:focus + .form-icon {
@@ -765,6 +766,28 @@ form
   fill: var(--primary-brand);
 }
 
+.textarea {
+  margin-top: 16px;
+}
+
+.text-input::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.text-input {
+  height: 120px;
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  line-height: 1.17;
+  font-size: 12px;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  outline: transparent;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-submit-btn {
   width: 169px;
   padding: 16px 32px;
@@ -781,16 +804,9 @@ form
   background-color: var(--pressed-state);
 }
 
-.checkbox-icon {
-}
-
 .checkbox-link {
   text-decoration: underline;
   color: var(--primary-brand);
-}
-
-.input-box {
-  margin-bottom: 8px;
 }
 
 .checkbox-wrap span,
@@ -798,6 +814,10 @@ form
   color: var(--subtle-text);
   font-size: 12px;
   letter-spacing: 0.48px;
+}
+
+.form-inputs-item {
+  margin-bottom: 8px;
 }
 
 .checkbox-wrap {
@@ -842,18 +862,4 @@ form
 .checkbox-wrap input:checked ~ .checkbox-icon-box {
   background: var(--primary-brand);
   border: none;
-}
-
-.text-input::placeholder {
-  color: rgba(46, 47, 66, 0.4);
-}
-
-.text-input {
-  height: auto;
-  width: 100%;
-  padding-left: 38px;
-  border-radius: 4px;
-  border: 1px solid var(--subtle-text);
-  outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
