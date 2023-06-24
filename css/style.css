@@ -769,6 +769,10 @@ form
   fill: var(--primary-brand);
 }
 
+.textarea {
+  margin-bottom: 16px;
+}
+
 .text-input::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
@@ -827,50 +831,6 @@ form
 .form-inputs-item {
   margin-bottom: 8px;
 }
-/*
-
-
-.hidden-checkbox {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.checkbox-icon-box {
-  display: inline-flex;
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 16px;
-  height: 16px;
-  fill: transparent;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  padding: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.checkbox-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 10px;
-  height: auto;
-  display: none;
-}
-
-.hidden-checkbox:checked + .checkbox-icon-box {
-  background-color: var(--pressed-state);
-  background-image: url(../images/icons.svg#icon-clickcheckbox);
-  fill: var(--light);
-}
-*/
 
 /*
 ==============================
@@ -901,6 +861,8 @@ checkbox
 
 .checkbox-icon-box {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   overflow: hidden;
   width: 16px;
