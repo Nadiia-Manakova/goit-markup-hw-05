@@ -817,32 +817,33 @@ form
 }
 
 .checkbox-label {
+  display: inline;
   color: var(--subtle-text);
   font-size: 12px;
-  letter-spacing: 0.48px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--subtle-text);
 }
 
 .form-inputs-item {
   margin-bottom: 8px;
 }
+/*
 
-.checkbox-wrap {
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 24px;
+
+.hidden-checkbox {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .checkbox-icon-box {
   display: inline-flex;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   width: 16px;
   height: 16px;
   fill: transparent;
@@ -863,18 +864,70 @@ form
   height: auto;
   display: none;
 }
-.hidden-checkbox {
-  -webkit-appearance: none;
-  position: absolute;
-}
 
-input:checked ~ .checkbox-icon-box .checkbox-icon {
-  display: block;
+.hidden-checkbox:checked + .checkbox-icon-box {
+  background-color: var(--pressed-state);
+  background-image: url(../images/icons.svg#icon-clickcheckbox);
   fill: var(--light);
 }
+*/
 
-input:checked ~ .checkbox-icon-box {
-  background: var(--primary-brand);
-  border: none;
+/*
+==============================
+checkbox
+==============================
+*/
+
+.checkbox-wrap {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.checkbox-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.checkbox-label input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.checkbox-icon-box {
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  fill: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  padding: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: auto;
+  display: block;
+}
+
+input:checked + .checkbox-label > .checkbox-icon-box {
+  display: block;
   background-color: var(--pressed-state);
+  fill: var(--light);
+  border: none;
 }
