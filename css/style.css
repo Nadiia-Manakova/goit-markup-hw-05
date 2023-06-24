@@ -723,6 +723,7 @@ form
   position: relative;
   width: 360px;
   margin-bottom: 4px;
+  line-height: 1.17;
 }
 .input-box {
   position: relative;
