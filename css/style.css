@@ -859,7 +859,7 @@ checkbox
   margin: -1px;
 }
 
-span.checkbox-icon-box {
+.checkbox-icon-box {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -884,11 +884,9 @@ span.checkbox-icon-box {
   transform: translate(-50%, -50%);
   width: 10px;
   height: auto;
-  display: block;
 }
 
 input:checked + .checkbox-label > .checkbox-icon-box {
-  display: block;
   background-color: var(--pressed-state);
   fill: var(--light);
   border: none;
