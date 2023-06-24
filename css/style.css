@@ -790,14 +790,18 @@ form
 }
 .modal-submit-btn {
   display: block;
-  width: 169px;
+  min-width: 169px
+  height: 56px;
   padding: 16px 32px;
   color: var(--white-background);
   font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   background-color: var(--primary-brand);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -834,7 +838,10 @@ form
 }
 
 .checkbox-icon-box {
+  display: inline-flex;
   position: relative;
+  align-items: center; 
+  justify-content: center;
   width: 16px;
   height: 16px;
   fill: transparent;
@@ -860,12 +867,14 @@ form
   position: absolute;
 }
 
-.checkbox-wrap input:checked ~ .checkbox-icon-box .checkbox-icon {
+input:checked ~ .checkbox-icon-box .checkbox-icon {
   display: block;
-  fill: var(--white-background);
+  fill: var(--light);
+  
 }
 
-.checkbox-wrap input:checked ~ .checkbox-icon-box {
+input:checked ~ .checkbox-icon-box {
   background: var(--primary-brand);
   border: none;
+  background-color: var(--pressed-state);
 }
