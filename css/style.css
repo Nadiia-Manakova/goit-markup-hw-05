@@ -845,8 +845,8 @@ checkbox
 
 .checkbox-label {
   display: inline-flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   margin-bottom: 24px;
 }
@@ -860,8 +860,6 @@ checkbox
 }
 
 .checkbox-icon-box {
-  align-items: center;
-  justify-content: center;
   position: relative;
   overflow: hidden;
   width: 16px;
